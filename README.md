@@ -1,3 +1,4 @@
 [![Maintainability](https://api.codeclimate.com/v1/badges/a99a88d28ad37a79dbf6/maintainability)](https://codeclimate.com/github/codeclimate/codeclimate/maintainability)
-
 ![](https://github.com/efefefef/frontend-project-lvl1/workflows/Lint/badge.svg)
+
+[![asciicast](https://asciinema.org/a/7NvxKBj2cORb54yNj5Cw34xww.svg)](https://asciinema.org/a/7NvxKBj2cORb54yNj5Cw34xww)
