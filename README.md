@@ -1,12 +1,27 @@
-[![Maintainability](https://api.codeclimate.com/v1/badges/a99a88d28ad37a79dbf6/maintainability)](https://codeclimate.com/github/codeclimate/codeclimate/maintainability)
+[![Maintainability](https://api.codeclimate.com/v1/badges/956ab6577c18df5a9269/maintainability)](https://codeclimate.com/github/Efefefef/frontend-project-lvl1/maintainability)
 ![](https://github.com/efefefef/frontend-project-lvl1/workflows/Lint/badge.svg)
 
-[![asciicast](https://asciinema.org/a/7NvxKBj2cORb54yNj5Cw34xww.svg)](https://asciinema.org/a/7NvxKBj2cORb54yNj5Cw34xww)
+<h1>Brain Games</h1>
 
-[![asciicast](https://asciinema.org/a/Uwzxqbc7awjeqyzt4QsKvgUlB.svg)](https://asciinema.org/a/Uwzxqbc7awjeqyzt4QsKvgUlB)
+This is a collection of simple cli games.
 
-[![asciicast](https://asciinema.org/a/UAmpuRjvoSjweqh8IujRKh4X7.svg)](https://asciinema.org/a/UAmpuRjvoSjweqh8IujRKh4X7)
+Each game has 3 rounds to play. 
+To win you should provide a correct solution in all of them!
 
-[![asciicast](https://asciinema.org/a/cj0jfEf9LwN1wSVnp5304BB31.svg)](https://asciinema.org/a/cj0jfEf9LwN1wSVnp5304BB31)
+<h2>Install</h2>
+`npm install` to install dependencies
 
-[![asciicast](https://asciinema.org/a/Vjk0fEWLRbk40kGJkHIqPCB1Q.svg)](https://asciinema.org/a/Vjk0fEWLRbk40kGJkHIqPCB1Q)
+`npm link` to install the package binaries globally
+
+<h2>Run</h2>
+
+To run the game just type the game's name in the terminal and hit enter
+
+![](demo.gif)
+
+<h2>Games</h2>
+- `brain-even` - find if the given number is even
+- `brain-calc` - calculate the correct result of the expression
+- `brain-gcd` - find the greatest common divisor of two integers
+- `brain-prime` - find if the number is prime
+- `brain-progression` - find the missing element of arithmetic progression
