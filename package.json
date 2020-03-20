@@ -1,7 +1,7 @@
 {
   "name": "frontend-project-lvl1",
   "version": "1.0.0",
-  "description": "",
+  "description": "The Collection of simple cli games",
   "main": "src/index.js",
   "bin": {
     "brain-games": "bin/brain-games.js",
@@ -19,7 +19,7 @@
     "type": "git",
     "url": "git+https://github.com/Efefefef/frontend-project-lvl1.git"
   },
-  "author": "",
+  "author": "Andrei Klimenok",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/Efefefef/frontend-project-lvl1/issues"
