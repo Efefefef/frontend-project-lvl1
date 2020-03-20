@@ -1,16 +1,14 @@
-import { greetUser, startGame, initiateGame } from '../src/index.js';
+import startGame from '../src/index.js';
+import generateRandomInteger from '../src/utils.js';
+
+const description = 'What number is missing in the progression?';
 
 const progression = () => {
-  const text = 'What number is missing in the progression?';
-
-  const generateStartInteger = () => Math.floor(Math.random() * 10);
-  const generateMissingNumber = () => Math.floor(Math.random() * 8) + 1;
-
   const expressionCreator = () => {
-    const startNumber = generateStartInteger();
+    const startNumber = generateRandomInteger(0, 9);
     const step = 2;
     const progressionLength = 10;
-    const missingNumber = generateMissingNumber();
+    const missingNumber = generateRandomInteger(1, 8);
     let resultString = '';
     for (let i = 0; i < progressionLength; i += 1) {
       resultString += `${startNumber + step * i} `;
@@ -29,9 +27,7 @@ const progression = () => {
     return String(result);
   };
 
-  greetUser();
-  initiateGame();
-  startGame(text, expressionCreator, expressionSolver);
+  startGame(description, expressionCreator, expressionSolver);
 };
 
 export default progression;

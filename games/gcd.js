@@ -1,10 +1,9 @@
-import { greetUser, startGame, initiateGame } from '../src/index.js';
+import startGame from '../src/index.js';
+import generateRandomInteger from '../src/utils.js';
+
+const description = 'Find the greatest common divisor of given numbers.';
 
 const gcd = () => {
-  const text = 'Find the greatest common divisor of given numbers.';
-
-  const generateRandomInteger = () => Math.floor(Math.random() * 50);
-
   const calcGcd = (a, b) => {
     if (!b) {
       return a;
@@ -12,7 +11,7 @@ const gcd = () => {
     return calcGcd(b, a % b);
   };
 
-  const expressionCreator = () => `${generateRandomInteger()} ${generateRandomInteger()}`;
+  const expressionCreator = () => `${generateRandomInteger(0, 49)} ${generateRandomInteger(0, 49)}`;
 
   const expressionSolver = (expression) => {
     const array = expression.split(' ');
@@ -22,9 +21,7 @@ const gcd = () => {
     return String(result);
   };
 
-  greetUser();
-  initiateGame();
-  startGame(text, expressionCreator, expressionSolver);
+  startGame(description, expressionCreator, expressionSolver);
 };
 
 export default gcd;

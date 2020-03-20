@@ -1,17 +1,16 @@
-import { greetUser, startGame, initiateGame } from '../src/index';
+import startGame from '../src/index.js';
+import generateRandomInteger from '../src/utils.js';
+
+const description = 'Answer "yes" if the number is even, otherwise answer "no".';
 
 const even = () => {
-  const text = 'Answer "yes" if the number is even, otherwise answer "no".';
+  const expressionCreator = () => generateRandomInteger(0, 9);
 
-  const generateRandomInteger = () => Math.floor(Math.random() * 10);
+  const isEven = (integer) => integer % 2 === 0;
 
-  const expressionCreator = generateRandomInteger;
+  const expressionSolver = (integer) => (isEven(integer) ? 'yes' : 'no');
 
-  const expressionSolver = (integer) => (integer % 2 === 0 ? 'yes' : 'no');
-
-  greetUser();
-  initiateGame();
-  startGame(text, expressionCreator, expressionSolver);
+  startGame(description, expressionCreator, expressionSolver);
 };
 
 export default even;

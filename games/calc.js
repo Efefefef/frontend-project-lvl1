@@ -1,12 +1,11 @@
-import { greetUser, startGame, initiateGame } from '../src/index.js';
+import startGame from '../src/index.js';
+import generateRandomInteger from '../src/utils.js';
+
+const description = 'What is the result of the expression?';
 
 const calc = () => {
-  const text = 'What is the result of the expression?';
-
-  const generateRandomInteger = () => Math.floor(Math.random() * 10);
-
   const generateRandomSign = () => {
-    const randomNumber = Math.floor(Math.random() * 3);
+    const randomNumber = generateRandomInteger(0, 2);
     let sign;
     switch (randomNumber) {
       case 0:
@@ -24,7 +23,7 @@ const calc = () => {
     return sign;
   };
 
-  const expressionCreator = () => `${generateRandomInteger()} ${generateRandomSign()} ${generateRandomInteger()}`;
+  const expressionCreator = () => `${generateRandomInteger(0, 9)} ${generateRandomSign()} ${generateRandomInteger(0, 9)}`;
 
   const calculate = (number1, number2, operationSign) => {
     let result;
@@ -53,9 +52,7 @@ const calc = () => {
     return String(result);
   };
 
-  greetUser();
-  initiateGame();
-  startGame(text, expressionCreator, expressionSolver);
+  startGame(description, expressionCreator, expressionSolver);
 };
 
 export default calc;
