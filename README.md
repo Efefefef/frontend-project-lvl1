@@ -24,11 +24,20 @@ To run the game just type the game's name in the terminal and hit enter
 
 - `brain-even` - find if the given number is even
 
+[![asciicast](https://asciinema.org/a/nLjpjmqdJZCLTnEquOyy5vYWt.svg)](https://asciinema.org/a/nLjpjmqdJZCLTnEquOyy5vYWt)
+
 - `brain-calc` - calculate the correct result of the expression
+
+[![asciicast](https://asciinema.org/a/tUqQ1TNfKdKDR3Su13KEWhh2g.svg)](https://asciinema.org/a/tUqQ1TNfKdKDR3Su13KEWhh2g)
 
 - `brain-gcd` - find the greatest common divisor of two integers
 
+[![asciicast](https://asciinema.org/a/AGjaRE2qoNr777Ju3WhwTpHOx.svg)](https://asciinema.org/a/AGjaRE2qoNr777Ju3WhwTpHOx)
+
 - `brain-prime` - find if the number is prime
+
+[![asciicast](https://asciinema.org/a/cj0jfEf9LwN1wSVnp5304BB31.svg)](https://asciinema.org/a/cj0jfEf9LwN1wSVnp5304BB31)
 
 - `brain-progression` - find the missing element of arithmetic progression
 
+[![asciicast](https://asciinema.org/a/Vjk0fEWLRbk40kGJkHIqPCB1Q.svg)](https://asciinema.org/a/Vjk0fEWLRbk40kGJkHIqPCB1Q)
