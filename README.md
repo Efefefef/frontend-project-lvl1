@@ -36,8 +36,8 @@ To run the game just type the game's name in the terminal and hit enter
 
 - `brain-prime` - find if the number is prime
 
-[![asciicast](https://asciinema.org/a/cj0jfEf9LwN1wSVnp5304BB31.svg)](https://asciinema.org/a/cj0jfEf9LwN1wSVnp5304BB31)
+[![asciicast](https://asciinema.org/a/2AykWRc0bWnWtxEU5f3dHg4jK.svg)](https://asciinema.org/a/2AykWRc0bWnWtxEU5f3dHg4jK)
 
 - `brain-progression` - find the missing element of arithmetic progression
 
-[![asciicast](https://asciinema.org/a/Vjk0fEWLRbk40kGJkHIqPCB1Q.svg)](https://asciinema.org/a/Vjk0fEWLRbk40kGJkHIqPCB1Q)
+[![asciicast](https://asciinema.org/a/1V11HdXz4JgR3ogmXp8Xa2Fm2.svg)](https://asciinema.org/a/1V11HdXz4JgR3ogmXp8Xa2Fm2)
