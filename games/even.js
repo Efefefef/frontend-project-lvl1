@@ -5,14 +5,12 @@ const description = 'Answer "yes" if the number is even, otherwise answer "no".'
 
 const isEven = (integer) => integer % 2 === 0;
 
-const even = () => {
-  const makeEvenGame = () => {
-    const question = generateRandomInteger(0, 9);
-    const answer = (isEven(question) ? 'yes' : 'no');
-    return [question, answer];
-  };
-
-  startGame(description, makeEvenGame);
+const makeEvenGame = () => {
+  const question = generateRandomInteger(0, 9);
+  const answer = (isEven(question) ? 'yes' : 'no');
+  return [question, answer];
 };
 
-export default even;
+const startEvenGame = () => startGame(description, makeEvenGame);
+
+export default startEvenGame;

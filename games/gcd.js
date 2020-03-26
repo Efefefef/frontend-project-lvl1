@@ -10,16 +10,14 @@ const calcGcd = (a, b) => {
   return calcGcd(b, a % b);
 };
 
-const gcd = () => {
-  const makeGcdGame = () => {
-    const firstInteger = generateRandomInteger(1, 49);
-    const secondInteger = generateRandomInteger(1, 49);
-    const question = `${firstInteger} ${secondInteger}`;
-    const answer = String(calcGcd(firstInteger, secondInteger));
-    return [question, answer];
-  };
-
-  startGame(description, makeGcdGame);
+const makeGcdGame = () => {
+  const firstInteger = generateRandomInteger(1, 49);
+  const secondInteger = generateRandomInteger(1, 49);
+  const question = `${firstInteger} ${secondInteger}`;
+  const answer = String(calcGcd(firstInteger, secondInteger));
+  return [question, answer];
 };
 
-export default gcd;
+const startGcdGame = () => startGame(description, makeGcdGame);
+
+export default startGcdGame;

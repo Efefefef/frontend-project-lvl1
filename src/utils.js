@@ -1,3 +1,5 @@
-const genRandomInt = (stNum, endNum) => Math.floor(Math.random() * (endNum - stNum + 1) + stNum);
+const getRandomNumber = (startNumber, endNumber) => Math.floor(
+  Math.random() * (endNumber - startNumber + 1) + startNumber,
+);
 
-export default genRandomInt;
+export default getRandomNumber;
