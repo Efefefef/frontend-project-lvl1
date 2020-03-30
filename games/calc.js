@@ -1,4 +1,4 @@
-import startGame from '../src/index.js';
+import playGame from '../src/index.js';
 import generateRandomInteger from '../src/utils.js';
 
 const description = 'What is the result of the expression?';
@@ -18,7 +18,7 @@ const calculate = (number1, number2, operationSign) => {
       result = number1 * number2;
       break;
     default:
-      console.log('Unknown operator');
+      return null;
   }
   return result;
 };
@@ -32,6 +32,6 @@ const makeCalcGame = () => {
   return [question, answer];
 };
 
-const startCalcGame = () => startGame(description, makeCalcGame);
+const startCalcGame = () => playGame(description, makeCalcGame);
 
 export default startCalcGame;

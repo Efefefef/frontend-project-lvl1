@@ -1,24 +1,23 @@
-import startGame from '../src/index.js';
+import playGame from '../src/index.js';
 import generateRandomInteger from '../src/utils.js';
 
 const description = 'What number is missing in the progression?';
 
 const makeProgressionGame = () => {
-  const startNumber = generateRandomInteger(0, 9);
+  const start = generateRandomInteger(0, 9);
   const step = 2;
   const progressionLength = 10;
-  const missingNumber = generateRandomInteger(1, 8);
-  const quizArray = [];
+  const missingPosition = generateRandomInteger(1, progressionLength - 2);
+  const progression = [];
   for (let i = 0; i < progressionLength; i += 1) {
-    quizArray.push(startNumber + step * i);
+    progression.push(start + step * i);
   }
-  quizArray[missingNumber] = '..';
-  const question = quizArray.join(' ');
-  const answer = String((Number(quizArray[missingNumber - 1])
-    + Number(quizArray[missingNumber + 1])) / 2);
+  progression[missingPosition] = '..';
+  const question = progression.join(' ');
+  const answer = String(start + step * missingPosition);
   return [question, answer];
 };
 
-const startProgressionGame = () => startGame(description, makeProgressionGame);
+const startProgressionGame = () => playGame(description, makeProgressionGame);
 
 export default startProgressionGame;
