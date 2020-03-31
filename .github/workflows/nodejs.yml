@@ -16,7 +16,7 @@ jobs:
       uses: actions/setup-node@v1
       with:
         node-version: '13.x'
-    - run: npm install
-    - run: npx eslint .
+    - run: make install
+    - run: make lint
       env:
         CI: true

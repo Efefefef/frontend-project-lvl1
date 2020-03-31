@@ -1,5 +1,5 @@
-import playGame from '../src/index.js';
-import generateRandomInteger from '../src/utils.js';
+import playGame from '../index.js';
+import generateRandomInteger from '../utils.js';
 
 const description = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 
@@ -7,7 +7,7 @@ const isPrime = (num) => {
   if (num <= 1) {
     return false;
   }
-  for (let i = 2; i < num; i += 1) {
+  for (let i = 2; i < num / 2 + 1; i += 1) {
     if (num % i === 0) return false;
   }
   return true;

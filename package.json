@@ -24,6 +24,11 @@
     "url": "https://github.com/Efefefef/frontend-project-lvl1/issues"
   },
   "homepage": "https://github.com/Efefefef/frontend-project-lvl1#readme",
+  "keywords": [
+    "brain games",
+    "cli games",
+    "test project"
+  ],
   "dependencies": {
     "readline-sync": "^1.4.10"
   },
